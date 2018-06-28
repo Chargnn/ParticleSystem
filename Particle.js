@@ -11,7 +11,7 @@ function Particle(x, y, radius, r, g, b, vx, vy){
     this.update = () => {
         this.x += this.vx;
         this.y += this.vy;
-        this.life -= 0.04;
+        this.life -= 0.05;
 
         this.draw();
     }
