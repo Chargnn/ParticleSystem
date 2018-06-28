@@ -38,7 +38,7 @@ function animate() {
         particle.update();
 
         obstacles.forEach(obstacle => {
-            particle.collide(obstacle.x +obstacle.radius, obstacle.y + obstacle.radius, obstacle.radius);
+            particle.collide(obstacle.x + obstacle.radius, obstacle.y + obstacle.radius, obstacle.radius);
         });
 
         if(particle.life < 0) {

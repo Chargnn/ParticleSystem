@@ -11,7 +11,7 @@ function Particle(x, y, radius, r, g, b, vx, vy){
     this.update = () => {
         this.x += this.vx;
         this.y += this.vy;
-        this.life -= 0.05;
+        this.life -= 0.04;
 
         this.draw();
     }
@@ -22,8 +22,8 @@ function Particle(x, y, radius, r, g, b, vx, vy){
         let distance = Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
 
         if(distance < this.radius + radius) {
-            this.vy *= -gravity / 2;
-            this.vx *= -gravity / 1.5;
+            this.vy *= -gravity / 1.2;
+            this.vx *= -gravity / 1.2;
             this.y -= radius + this.radius;
             this.x -= radius + this.radius;
         }
